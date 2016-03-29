@@ -8,8 +8,8 @@
 
 <AnchorPane id="AnchorPane" prefHeight="634.0" prefWidth="764.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="m1.piu.FXMLMainFrameController">
     <children>
-        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <MenuBar prefHeight="31.0" prefWidth="764.0">
+        <Label fx:id="label" layoutX="3.0" layoutY="595.0" minHeight="16" minWidth="69" prefHeight="37.0" prefWidth="754.0" />
+      <MenuBar prefHeight="31.0" prefWidth="888.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
