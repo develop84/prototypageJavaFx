@@ -34,16 +34,19 @@ Pane borderNC;
     }    
     
     public void pressAddress(ActionEvent event) throws IOException{
+        //borderNC.getControler();
         borderNC.getChildren().clear();
         borderNC.getChildren().add(FXMLLoader.load(getClass().getResource("FXMLShowAdressTab.fxml")));
     }
     
-    public void pressPhone(ActionEvent event){
-        
+    public void pressPhone(ActionEvent event) throws IOException{
+        borderNC.getChildren().clear();
+        borderNC.getChildren().add(FXMLLoader.load(getClass().getResource("FXMLPhoneContact.fxml")));
     }
     
-    public void pressIdentity(ActionEvent event){
-        
+    public void pressIdentity(ActionEvent event) throws IOException{
+        borderNC.getChildren().clear();
+        borderNC.getChildren().add(FXMLLoader.load(getClass().getResource("FXMLIdentityContact.fxml")));
     }
     
 }

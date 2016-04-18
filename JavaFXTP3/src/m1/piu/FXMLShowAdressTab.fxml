@@ -6,8 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="325.0" prefWidth="338.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="m1.piu.FXMLShowAdressTabController">
+<AnchorPane id="AnchorPane" prefHeight="381.0" prefWidth="338.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="m1.piu.FXMLShowAdressTabController">
    <children>
       <Label layoutX="53.0" layoutY="50.0" text="Street" />
       <Label layoutX="67.0" layoutY="80.0" text="City" />
@@ -15,5 +14,6 @@
       <TextField layoutX="111.0" layoutY="45.0" />
       <TextField layoutX="111.0" layoutY="75.0" />
       <TextField layoutX="111.0" layoutY="108.0" />
+      <Pane fx:id="paneD" layoutX="41.0" layoutY="148.0" prefHeight="200.0" prefWidth="257.0" />
    </children>
 </AnchorPane>

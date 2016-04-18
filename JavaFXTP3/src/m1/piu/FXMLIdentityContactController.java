@@ -6,10 +6,7 @@
  * and open the template in the editor.
  */
 
-<<<<<<< HEAD
-=======
 
->>>>>>> c7b2389ae6f94720ff2992715af3d2681c666a94
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.Initializable;

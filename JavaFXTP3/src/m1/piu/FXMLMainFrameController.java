@@ -12,10 +12,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-<<<<<<< HEAD
-=======
+
 import javafx.scene.Scene;
->>>>>>> c7b2389ae6f94720ff2992715af3d2681c666a94
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
