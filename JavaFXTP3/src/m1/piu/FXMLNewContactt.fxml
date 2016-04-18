@@ -20,5 +20,6 @@
       <ToggleButton fx:id="identity" layoutX="47.0" layoutY="121.0" mnemonicParsing="false" onAction="#pressIdentity" text="Identity" />
       <ToggleButton fx:id="phone" layoutX="175.0" layoutY="121.0" mnemonicParsing="false" onAction="#pressPhone" text="Phone" />
       <ToggleButton fx:id="address" layoutX="300.0" layoutY="121.0" mnemonicParsing="false" onAction="#pressAddress" text="Address" />
+      <Pane fx:id="borderNC" layoutX="33.0" layoutY="166.0" prefHeight="214.0" prefWidth="348.0" />
    </children>
 </AnchorPane>

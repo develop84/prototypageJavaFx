@@ -5,10 +5,17 @@
  */
 package m1.piu;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
+
+
 
 /**
  * FXML Controller class
@@ -16,7 +23,8 @@ import javafx.fxml.Initializable;
  * @author cyril
  */
 public class FXMLNewContacttController implements Initializable {
-
+@FXML
+Pane borderNC;
     /**
      * Initializes the controller class.
      */
@@ -25,8 +33,9 @@ public class FXMLNewContacttController implements Initializable {
         // TODO
     }    
     
-    public void pressAddress(ActionEvent event){
-        
+    public void pressAddress(ActionEvent event) throws IOException{
+        borderNC.getChildren().clear();
+        borderNC.getChildren().add(FXMLLoader.load(getClass().getResource("FXMLShowAdressTab.fxml")));
     }
     
     public void pressPhone(ActionEvent event){
