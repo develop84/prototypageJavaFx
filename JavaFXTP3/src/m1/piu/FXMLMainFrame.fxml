@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
@@ -9,7 +10,7 @@
 <AnchorPane id="AnchorPane" prefHeight="634.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="m1.piu.FXMLMainFrameController">
     <children>
         <Label fx:id="label" layoutX="3.0" layoutY="595.0" minHeight="16" minWidth="69" prefHeight="37.0" prefWidth="754.0" />
-      <MenuBar prefHeight="31.0" prefWidth="888.0">
+      <MenuBar prefHeight="31.0" prefWidth="891.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
@@ -27,14 +28,30 @@
           </Menu>
         </menus>
       </MenuBar>
-      <HBox layoutY="31.0" prefHeight="83.0" prefWidth="764.0">
+      <AnchorPane layoutY="31.0" prefHeight="65.0" prefWidth="891.0">
          <children>
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="New Contact" />
-            <Button layoutX="62.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" text="Edit Contact" />
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" text="Remove Contact" />
-            <TextField promptText="Search" />
-            <Button mnemonicParsing="false" text="?" />
+            <Button layoutX="14.0" layoutY="19.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: #05245d;" text="New Contact" textFill="#fcfafa">
+               <font>
+                  <Font size="13.0" />
+               </font></Button>
+            <Button layoutX="167.0" layoutY="19.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" style="-fx-background-color: #05245d;" text="Remove Contact" textFill="#fcfafa">
+               <font>
+                  <Font size="13.0" />
+               </font></Button>
+            <Button layoutX="350.0" layoutY="19.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #05245d;" text="Edit Contact" textFill="#fffefe">
+               <font>
+                  <Font size="13.0" />
+               </font></Button>
+            <TextField layoutX="672.0" layoutY="20.0" promptText="Search">
+               <font>
+                  <Font name="Calibri" size="13.0" />
+               </font></TextField>
+            <Button layoutX="834.0" layoutY="19.0" mnemonicParsing="false" style="-fx-background-color: #05245d;" text="?" textFill="#fffefe" />
          </children>
-      </HBox>
+      </AnchorPane>
+      <AnchorPane layoutX="-1.0" layoutY="96.0" prefHeight="509.0" prefWidth="891.0">
+         <children>
+             <fx:include source="FXMLMainPanel.fxml" />
+         </children></AnchorPane>
     </children>
 </AnchorPane>
