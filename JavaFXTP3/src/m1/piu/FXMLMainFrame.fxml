@@ -30,7 +30,7 @@
       </MenuBar>
       <AnchorPane layoutY="31.0" prefHeight="65.0" prefWidth="891.0">
          <children>
-            <Button layoutX="14.0" layoutY="19.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: #05245d;" text="New Contact" textFill="#fcfafa">
+            <Button fx:id="newContact" layoutX="14.0" layoutY="19.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="130.0" style="-fx-background-color: #05245d;" text="New Contact" textFill="#fcfafa">
                <font>
                   <Font size="13.0" />
                </font></Button>

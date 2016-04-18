@@ -22,8 +22,11 @@ public class FXMLMainFrameController implements Initializable {
     private Label label;
     
     @FXML
+    Button newContact;
+    
+    @FXML
     private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
+        
         label.setText("Hello World!");
     }
     
