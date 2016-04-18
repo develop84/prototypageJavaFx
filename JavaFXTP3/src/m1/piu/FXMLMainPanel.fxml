@@ -6,6 +6,37 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="m1.piu.FXMLMainPanelController">
-    
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="880.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="javafxtp3.FXMLMainPanelController">
+   <children>
+      <Pane layoutX="442.0" layoutY="31.0" prefHeight="419.0" prefWidth="438.0">
+         <children>
+            <TitledPane animated="false" layoutX="229.0" layoutY="21.0" prefHeight="206.0" prefWidth="200.0" text="Phone numbers" />
+            <TitledPane animated="false" layoutX="14.0" layoutY="21.0" text="Identity">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" layoutX="14.0" layoutY="236.0" prefHeight="124.0" prefWidth="417.0" text="Address">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </TitledPane>
+         </children>
+      </Pane>
+      <ScrollPane layoutY="31.0" prefHeight="419.0" prefWidth="200.0">
+         <content>
+            <VBox prefHeight="418.0" prefWidth="198.0" />
+         </content>
+      </ScrollPane>
+      <Label prefHeight="31.0" prefWidth="200.0" text="Address books" />
+      <Label layoutX="207.0" layoutY="7.0" prefHeight="17.0" prefWidth="221.0" text="Contacts" />
+      <Label layoutX="449.0" layoutY="-1.0" prefHeight="39.0" prefWidth="427.0" text="Contact details" />
+      <TableView layoutX="207.0" layoutY="31.0" prefHeight="419.0" prefWidth="229.0">
+        <columns>
+          <TableColumn prefWidth="96.0" text="Last Name" />
+          <TableColumn prefWidth="123.0" text="First Name" />
+        </columns>
+      </TableView>
+   </children>
 </AnchorPane>
