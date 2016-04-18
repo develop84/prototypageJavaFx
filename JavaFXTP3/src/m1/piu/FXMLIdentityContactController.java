@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-import .*;
+
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
