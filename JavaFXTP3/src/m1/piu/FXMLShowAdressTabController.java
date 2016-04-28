@@ -8,7 +8,6 @@ package m1.piu;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -21,27 +20,47 @@ import javafx.scene.layout.Pane;
  */
 public class FXMLShowAdressTabController implements Initializable {
 
-    String mem;
     @FXML
     Pane paneD;
+    
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        paneD.getChildren().clear();
-        
-        try{
-        if(){
-            paneD.getChildren().add(FXMLLoader.load(getClass().getResource("FXMLProfessional.fxml")));
-        }
-        else{
-            paneD.getChildren().add(FXMLLoader.load(getClass().getResource("FXMLStudent.fxml")));
-        }
-        }catch(IOException e){
-            
-        }
-    }    
+    }
+
+ 
     
-}
+    public void setData(String type) {
+        paneD.getChildren().clear();
+
+        System.out.println(type);
+        switch (type) {
+            case "Professional":
+                try {
+                    System.out.println("pro");
+
+                    paneD.getChildren().add(FXMLLoader.load(getClass().getResource("FXMLProfessional.fxml")));
+                    paneD.requestLayout();
+                } catch (IOException e) {
+                }
+                break;
+            case "Student":
+                try {
+                    System.out.println("stu");
+
+                    paneD.getChildren().add(FXMLLoader.load(getClass().getResource("FXMLStudent.fxml")));
+                                    paneD.requestLayout();
+                } catch (IOException e) {
+
+                }
+                break;
+        }
+} 
+        
+    }    
+        
+    
+

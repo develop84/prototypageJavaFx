@@ -6,8 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="233.0" prefWidth="348.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="m1.piu.FXMLPhoneNumTabController">
+<AnchorPane id="AnchorPane" prefHeight="233.0" prefWidth="348.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="m1.piu.FXMLPhoneNumTabController">
    <children>
       <TableView editable="true" layoutX="14.0" layoutY="14.0" prefHeight="197.0" prefWidth="226.0">
         <columns>
@@ -16,7 +15,7 @@
             <TableColumn prefWidth="75.0" text="Type" />
         </columns>
       </TableView>
-      <Button layoutX="255.0" layoutY="29.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Add" />
+      <Button fx:id="buttPhone" layoutX="255.0" layoutY="29.0" mnemonicParsing="false" onAction="#newPhoneNum" prefHeight="25.0" prefWidth="72.0" text="Add" />
       <Button layoutX="255.0" layoutY="78.0" mnemonicParsing="false" text="Remove" />
       <Button layoutX="255.0" layoutY="127.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Up" />
       <Button layoutX="255.0" layoutY="173.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Down" />

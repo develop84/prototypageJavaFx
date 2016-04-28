@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="161.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="9.0" layoutY="42.0" text="Company name" />
+      <Label layoutX="56.0" layoutY="73.0" text="Function" />
+      <Label layoutX="60.0" layoutY="108.0" text="Service" />
+      <TextField layoutX="126.0" layoutY="37.0" />
+      <TextField layoutX="126.0" layoutY="68.0" />
+      <TextField layoutX="126.0" layoutY="103.0" />
+   </children>
+</AnchorPane>
