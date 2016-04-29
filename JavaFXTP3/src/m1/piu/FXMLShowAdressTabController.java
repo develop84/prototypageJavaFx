@@ -20,6 +20,7 @@ import javafx.scene.layout.Pane;
  */
 public class FXMLShowAdressTabController implements Initializable {
 
+    FXMLLoader fl;
     @FXML
     Pane paneD;
     
@@ -29,6 +30,39 @@ public class FXMLShowAdressTabController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        FXMLNewContacttController fc;
+                fl = new FXMLLoader();
+        try {
+            fl.load(getClass().getResource("FXMLNewContactt.fxml").openStream());
+        } catch (IOException e) {
+        }// TODO
+        fc = (FXMLNewContacttController) fl.getController();
+        String mem = fc.getTypeValue();
+        paneD.getChildren().clear();
+
+        System.out.println(mem);
+        switch (mem) {
+            case "Professional":
+                try {
+                    System.out.println("pro");
+
+                    paneD.getChildren().add(FXMLLoader.load(getClass().getResource("FXMLProfessional.fxml")));
+                    paneD.requestLayout();
+                } catch (IOException e) {
+                }
+                break;
+            case "Student":
+                try {
+                    System.out.println("stu");
+
+                    paneD.getChildren().add(FXMLLoader.load(getClass().getResource("FXMLStudent.fxml")));
+                                    paneD.requestLayout();
+                } catch (IOException e) {
+
+                }
+                break;
+        }
+        
     }
 
  

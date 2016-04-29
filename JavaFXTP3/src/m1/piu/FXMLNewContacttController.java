@@ -15,8 +15,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.MenuButton;
-import javafx.scene.control.MenuItem;
 import javafx.scene.layout.Pane;
 
 /**
@@ -29,6 +27,8 @@ public class FXMLNewContacttController implements Initializable {
     @FXML
     Pane borderNC;
 
+    static String mem;
+    
     @FXML
        ComboBox typeContact;
     
@@ -49,14 +49,21 @@ public class FXMLNewContacttController implements Initializable {
         typeContact.setItems(list);
 
     }
+    
+    public String getTypeValue(){
+
+        return mem;
+    }
 
     public void pressAddress(ActionEvent event) throws IOException {
         //borderNC.getControler();
+        mem = typeContact.getValue().toString();
                 borderNC.getChildren().clear();
+
 
         borderNC.getChildren().add(FXMLLoader.load(getClass().getResource("FXMLShowAdressTab.fxml")));
 
-        try {
+        /*try {
             fl.load(getClass().getResource("FXMLShowAdressTab.fxml").openStream());
         } catch (IOException e) {
         }// TODO
@@ -65,11 +72,12 @@ public class FXMLNewContacttController implements Initializable {
 
                 fc.setData(typeContact.getValue().toString());
             
-        
+       */ 
 
     }
 
     public void pressPhone(ActionEvent event) throws IOException {
+
         borderNC.getChildren().clear();
         borderNC.getChildren().add(FXMLLoader.load(getClass().getResource("FXMLPhoneSecond.fxml")));
     }
