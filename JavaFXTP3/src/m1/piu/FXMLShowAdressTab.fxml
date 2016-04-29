@@ -14,6 +14,6 @@
       <TextField layoutX="111.0" layoutY="45.0" />
       <TextField layoutX="111.0" layoutY="75.0" />
       <TextField layoutX="111.0" layoutY="108.0" />
-      <Pane fx:id="paneD" layoutX="41.0" layoutY="148.0" prefHeight="200.0" prefWidth="257.0" />
+      <Pane fx:id="paneD" layoutX="18.0" layoutY="147.0" prefHeight="200.0" prefWidth="257.0" />
    </children>
 </AnchorPane>

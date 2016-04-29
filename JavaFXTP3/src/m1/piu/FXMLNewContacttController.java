@@ -47,32 +47,23 @@ public class FXMLNewContacttController implements Initializable {
         fl = new FXMLLoader();
         ObservableList<String> list = FXCollections.observableArrayList("Private", "Professional", "Student");
         typeContact.setItems(list);
+        typeContact.getSelectionModel().select("Private");
 
     }
     
     public String getTypeValue(){
-
+        if(mem.getClass() == null)return "Private";
         return mem;
     }
 
     public void pressAddress(ActionEvent event) throws IOException {
         //borderNC.getControler();
+        
+
+        
         mem = typeContact.getValue().toString();
-                borderNC.getChildren().clear();
-
-
+        borderNC.getChildren().clear();
         borderNC.getChildren().add(FXMLLoader.load(getClass().getResource("FXMLShowAdressTab.fxml")));
-
-        /*try {
-            fl.load(getClass().getResource("FXMLShowAdressTab.fxml").openStream());
-        } catch (IOException e) {
-        }// TODO
-        fc = (FXMLShowAdressTabController) fl.getController();
-
-
-                fc.setData(typeContact.getValue().toString());
-            
-       */ 
 
     }
 

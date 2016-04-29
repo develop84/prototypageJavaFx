@@ -64,35 +64,6 @@ public class FXMLShowAdressTabController implements Initializable {
         }
         
     }
-
- 
-    
-    public void setData(String type) {
-        paneD.getChildren().clear();
-
-        System.out.println(type);
-        switch (type) {
-            case "Professional":
-                try {
-                    System.out.println("pro");
-
-                    paneD.getChildren().add(FXMLLoader.load(getClass().getResource("FXMLProfessional.fxml")));
-                    paneD.requestLayout();
-                } catch (IOException e) {
-                }
-                break;
-            case "Student":
-                try {
-                    System.out.println("stu");
-
-                    paneD.getChildren().add(FXMLLoader.load(getClass().getResource("FXMLStudent.fxml")));
-                                    paneD.requestLayout();
-                } catch (IOException e) {
-
-                }
-                break;
-        }
-} 
         
     }    
         

@@ -9,7 +9,7 @@
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="m1.piu.FXMLContactPanelController">
    <children>
       <Label layoutX="76.0" layoutY="47.0" text="Contact" />
-      <Label layoutX="144.0" layoutY="47.0" text="Nom Prénom" />
+      <Label layoutX="144.0" layoutY="47.0" text="Linus Torvalds" />
       <Label layoutX="76.0" layoutY="73.0" text="Contact type" />
       <ChoiceBox layoutX="180.0" layoutY="68.0" prefWidth="150.0" />
       <Separator layoutX="27.0" layoutY="120.0" prefHeight="0.0" prefWidth="542.0" />
