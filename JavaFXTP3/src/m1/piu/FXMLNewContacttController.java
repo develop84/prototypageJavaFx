@@ -24,6 +24,7 @@ import javafx.scene.layout.Pane;
  */
 public class FXMLNewContacttController implements Initializable {
 
+    boolean address = false;
     @FXML
     Pane borderNC;
 
@@ -59,8 +60,17 @@ public class FXMLNewContacttController implements Initializable {
     public void pressAddress(ActionEvent event) throws IOException {
         //borderNC.getControler();
         
-
+address = true;
         
+        mem = typeContact.getValue().toString();
+        borderNC.getChildren().clear();
+        borderNC.getChildren().add(FXMLLoader.load(getClass().getResource("FXMLShowAdressTab.fxml")));
+
+    }
+    
+    public void actScroll(ActionEvent event) throws IOException {
+        if( address == false )return;
+        //borderNC.getControler();
         mem = typeContact.getValue().toString();
         borderNC.getChildren().clear();
         borderNC.getChildren().add(FXMLLoader.load(getClass().getResource("FXMLShowAdressTab.fxml")));
@@ -68,12 +78,16 @@ public class FXMLNewContacttController implements Initializable {
     }
 
     public void pressPhone(ActionEvent event) throws IOException {
+        address = false;
 
         borderNC.getChildren().clear();
         borderNC.getChildren().add(FXMLLoader.load(getClass().getResource("FXMLPhoneSecond.fxml")));
     }
+    
+    
 
     public void pressIdentity(ActionEvent event) throws IOException {
+        address = false;
         borderNC.getChildren().clear();
         borderNC.getChildren().add(FXMLLoader.load(getClass().getResource("FXMLIdentityContact.fxml")));
     }

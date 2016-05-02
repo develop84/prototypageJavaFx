@@ -6,8 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="320.0" prefWidth="383.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="m1.piu.FXMLIdentityContactController">
+<AnchorPane id="AnchorPane" prefHeight="320.0" prefWidth="383.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="m1.piu.FXMLIdentityContactController">
    <children>
       <Label layoutX="69.0" layoutY="68.0" text="First name" />
       <Label layoutX="69.0" layoutY="102.0" text="Last name" />
@@ -15,13 +14,13 @@
       <TextField layoutX="163.0" layoutY="97.0" />
       <Label layoutX="70.0" layoutY="141.0" text="Age" />
       <Label layoutX="69.0" layoutY="185.0" text="Gender" />
-      <TextField layoutX="163.0" layoutY="136.0" prefHeight="25.0" prefWidth="37.0" />
+      <TextField fx:id="label" layoutX="163.0" layoutY="136.0" prefHeight="25.0" prefWidth="37.0" />
       <RadioButton layoutX="163.0" layoutY="184.0" mnemonicParsing="false" text="Male" />
       <RadioButton layoutX="272.0" layoutY="184.0" mnemonicParsing="false" text="Female" />
       <Label layoutX="69.0" layoutY="214.0" text="Email" />
       <TextField layoutX="163.0" layoutY="209.0" />
       <Button layoutX="130.0" layoutY="260.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" text="Ok" />
       <Button layoutX="240.0" layoutY="260.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" text="Cancel" />
-      <Slider layoutX="211.0" layoutY="141.0" />
+      <Slider fx:id="slider" layoutX="211.0" layoutY="141.0" />
    </children>
 </AnchorPane>

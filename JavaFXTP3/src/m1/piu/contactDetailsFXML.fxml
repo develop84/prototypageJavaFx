@@ -31,27 +31,27 @@
             <Font size="13.0" />
          </font>
       </Label>
-      <Pane layoutY="73.0" prefHeight="95.0" prefWidth="161.0">
+      <Pane layoutY="73.0" prefHeight="95.0" prefWidth="188.0">
          <children>
             <Label layoutX="13.0" layoutY="14.0" prefHeight="17.0" prefWidth="68.0" text="Name:" />
             <Label layoutX="13.0" layoutY="39.0" prefHeight="17.0" prefWidth="68.0" text="Age:" />
             <Label layoutX="13.0" layoutY="64.0" prefHeight="17.0" prefWidth="68.0" text="Email:" />
-            <Label layoutX="53.0" layoutY="14.0" prefHeight="17.0" prefWidth="104.0" text="Label" />
-            <Label layoutX="53.0" layoutY="39.0" prefHeight="17.0" prefWidth="104.0" text="Label" />
-            <Label layoutX="53.0" layoutY="64.0" prefHeight="17.0" prefWidth="104.0" text="Label" />
+            <Label layoutX="53.0" layoutY="14.0" prefHeight="17.0" prefWidth="123.0" text=" Richard Stallman" />
+            <Label layoutX="53.0" layoutY="39.0" prefHeight="17.0" prefWidth="76.0" text="61" />
+            <Label layoutX="62.0" layoutY="64.0" prefHeight="17.0" prefWidth="173.0" text="richard.stallman@nsa.us" />
          </children>
       </Pane>
-      <Pane layoutX="176.0" layoutY="73.0" prefHeight="95.0" prefWidth="161.0">
+      <Pane layoutX="191.0" layoutY="73.0" prefHeight="95.0" prefWidth="161.0">
          <children>
-            <Label layoutX="13.0" layoutY="48.0" prefHeight="17.0" prefWidth="68.0" text="Office:" />
+            <Label layoutX="13.0" layoutY="31.0" prefHeight="17.0" prefWidth="68.0" text="Office:" />
             <Label layoutX="13.0" layoutY="14.0" prefHeight="17.0" prefWidth="68.0" text="Mobile:" />
-            <Label layoutX="55.0" layoutY="14.0" prefHeight="17.0" prefWidth="98.0" text="Label" />
-            <Label layoutX="55.0" layoutY="48.0" prefHeight="17.0" prefWidth="98.0" text="Label" />
+            <Label layoutX="55.0" layoutY="14.0" prefHeight="17.0" prefWidth="98.0" text=" 06060606060" />
+            <Label layoutX="55.0" layoutY="31.0" prefHeight="17.0" prefWidth="98.0" text=" GNU" />
          </children>
       </Pane>
       <Pane layoutX="6.0" layoutY="209.0" prefHeight="47.0" prefWidth="334.0">
          <children>
-            <Label layoutX="2.0" layoutY="6.0" prefHeight="38.0" prefWidth="254.0" text="Label" />
+            <Label layoutX="14.0" layoutY="5.0" prefHeight="38.0" prefWidth="254.0" text="Avignon" />
             <Button layoutX="255.0" layoutY="21.0" mnemonicParsing="false" style="-fx-background-color: #05245d;" text="See on map" textFill="#dacece" />
          </children>
       </Pane>

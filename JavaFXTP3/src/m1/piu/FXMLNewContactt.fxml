@@ -15,7 +15,7 @@
       <ToggleButton fx:id="phone" layoutX="175.0" layoutY="121.0" mnemonicParsing="false" onAction="#pressPhone" text="Phone" />
       <ToggleButton fx:id="address" layoutX="300.0" layoutY="121.0" mnemonicParsing="false" onAction="#pressAddress" text="Address" />
       <Pane fx:id="borderNC" layoutX="14.0" layoutY="174.0" prefHeight="361.0" prefWidth="348.0" />
-      <ComboBox fx:id="typeContact" layoutX="175.0" layoutY="74.0" prefWidth="150.0" />
+      <ComboBox fx:id="typeContact" layoutX="175.0" layoutY="74.0" onAction="#actScroll" prefWidth="150.0" />
             
       
       
